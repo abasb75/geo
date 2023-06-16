@@ -14,6 +14,10 @@ function App() {
               },
               error=>{
                 alert('please allow to use your Location');
+              },{
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumAge: 0
               }
             );
           }
